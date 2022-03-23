@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sign-up</title>
   </head>
   <body>
@@ -24,38 +25,39 @@
         <p>You know you want to.</p>
         </div>
         <div class="content__form">
-          <form action="#">
+          <form>
             <div>
               <div>
                 <div>
                   <label for="first-name">FIRST NAME</label>
-                  <input type="text" name="first-name" id="first-name">
+                  <input type="text" name="first-name" id="first-name" required>
                 </div>
                 <div>
                   <label for="last-name">LAST NAME</label>
-                  <input type="text" name="last-name" id="last-name">
+                  <input type="text" name="last-name" id="last-name" required>
                 </div>
               </div>
               <div>
                 <div>
                   <label for="email">EMAIL</label>
-                  <input type="email" name="email" id="email">
+                  <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                   <label for="phone-number">PHONE NUMBER</label>
-                  <input type="tel" name="phone-number" id="phone-number">
+                  <input type="tel" name="phone-number" id="phone-number" required>
                 </div>
               </div>
               <div>
                 <div>
                   <label for="pw">PASSWORD</label>
-                  <input type="password" name="pw" id="pw">
+                  <input type="password" name="pw" id="pw" oninput="onChange()" required>
                 </div>
                 <div>
                   <label for="pw2">CONFIRM PASSWORD</label>
-                  <input type="password" name="pw2" id="pw2">
+                  <input type="password" name="pw2" id="pw2" oninput="onChange()" required>
                 </div>
               </div>
+              <p class="error__message invisible">*Passwords do not match!</p>
             </div>
             <button type="submit">Create Account</button>
           </form>

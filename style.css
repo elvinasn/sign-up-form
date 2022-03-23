@@ -12,8 +12,16 @@ body {
 label {
   display: block;
 }
+input {
+  border: 2px solid #e5e7eb;
+}
+input:focus {
+  outline: none;
+  border: 2px solid lightblue;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+}
 .picture {
-  width: 50%;
+  width: 60%;
   background-image: url(images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +55,7 @@ label {
 }
 .content__header,
 .content__form {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 95%);
 }
 .content__header {
   height: 44.5%;
@@ -107,4 +115,22 @@ form button:hover {
 }
 .content__question a:hover {
   opacity: 0.7;
+}
+.error__message {
+  margin-top: -10px;
+  color: red;
+}
+.invisible {
+  visibility: hidden;
+}
+button:disabled {
+  color: black;
+  background: lightgrey;
+}
+button:disabled:hover {
+  cursor: initial;
+  opacity: 1;
+}
+.error {
+  border: 2px solid red;
 }
