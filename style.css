@@ -7,7 +7,6 @@
 body {
   display: flex;
   height: 100vh;
-  overflow: hidden;
 }
 label {
   display: block;
@@ -27,16 +26,26 @@ input:focus {
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.picture p {
+  margin-top: auto;
+  padding: 10px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: #cccccc;
 }
 .picture__content {
   width: 100%;
   height: 250px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 144px;
   display: flex;
   justify-content: center;
+  margin-top: 420px;
   align-items: center;
   gap: 20px;
 }
@@ -69,7 +78,7 @@ input:focus {
   font-size: 1.25rem;
 }
 .content__form {
-  height: 100%;
+  height: calc(100vh - 44.5%);
 }
 .content__form form > div {
   background-color: white;
@@ -107,13 +116,13 @@ form button:hover {
   margin-top: 30px;
   font-weight: 400;
 }
-.content__question a {
+a {
   text-decoration: none;
   color: lightcoral;
   font-weight: 600;
   transition: 0.3s ease;
 }
-.content__question a:hover {
+a:hover {
   opacity: 0.7;
 }
 .error__message {
