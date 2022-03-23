@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   display: flex;
   height: 100vh;
   overflow: hidden;
+}
+label {
+  display: block;
 }
 .picture {
   width: 50%;
@@ -19,18 +24,87 @@ body {
 }
 .picture__content {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-top: -200px;
+  margin-top: 144px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .picture__content img {
-    height: 75%;
+  height: 75%;
 }
-.picture__content h1{
-    font-size: 70px;
-    color: #cccccc;
+.picture__content h1 {
+  font-size: 70px;
+  color: #cccccc;
+  font-family: "Lobster", cursive;
+  letter-spacing: 5px;
+}
+.content {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.content__header,
+.content__form {
+  background-color: hsl(0, 0%, 98%);
+}
+.content__header {
+  height: 44.5%;
+  padding: 210px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.content__header p {
+  font-size: 1.25rem;
+}
+.content__form {
+  height: 100%;
+}
+.content__form form > div {
+  background-color: white;
+  min-height: 250px;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 40%);
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 50px;
+}
+form > div > div {
+  display: flex;
+  gap: 90px;
+}
+form button {
+  background-color: lightcoral;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+form button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.content__question {
+  margin-left: 50px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.content__question a {
+  text-decoration: none;
+  color: lightcoral;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.content__question a:hover {
+  opacity: 0.7;
 }
