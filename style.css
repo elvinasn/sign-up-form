@@ -13,6 +13,9 @@ label {
 }
 input {
   border: 2px solid #e5e7eb;
+  font-size: 1rem;
+  padding: 3px;
+  border-radius: 5px;
 }
 input:focus {
   outline: none;
@@ -45,7 +48,7 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  margin-top: 420px;
+  margin-top: 40vh;
   align-items: center;
   gap: 20px;
 }
@@ -67,7 +70,7 @@ input:focus {
   background-color: hsl(0, 0%, 95%);
 }
 .content__header {
-  height: 44.5%;
+  height: 40vh;
   padding: 210px 50px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -78,12 +81,12 @@ input:focus {
   font-size: 1.25rem;
 }
 .content__form {
-  height: calc(100vh - 44.5%);
+  height: calc(100vh - 40vh);
 }
 .content__form form > div {
   background-color: white;
   min-height: 250px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: hsl(0, 0%, 40%);
   letter-spacing: 1px;
   display: flex;
@@ -126,7 +129,7 @@ a:hover {
   opacity: 0.7;
 }
 .error__message {
-  margin-top: -10px;
+  margin-top: -5px;
   color: red;
 }
 .invisible {
